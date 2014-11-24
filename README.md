@@ -1,7 +1,6 @@
 Reflection Library
 ==================
 
-Reflection는 iOS의 Jailbreak 상태를 확인하는 라이브러리이다.
+Reflection is a library to check the status of Jailbreak iOS.
 
-Reflection Library는 DigiCAP 서비스팀에서 연구를 위한 미니 프로젝트이다.
-
+Reflection Library is a mini project for research in DigiCAP (http://www.digicaps.com) service team.
