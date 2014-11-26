@@ -7,21 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "Reflection.h"
+
 
 @interface ViewController ()
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Reflection *reflection = [[Reflection alloc] init];
+    [reflection registerDevice:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark -
+#pragma mark - Reflection Delegate
+#pragma mark -
+
+- (void) updateSecurityLevel:(SecurityLevel)level {
+    
+    NSLog(@"updateSecurityLevel Call");
 }
 
 @end
