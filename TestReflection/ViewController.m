@@ -10,7 +10,7 @@
 #import "Reflection.h"
 
 
-@interface ViewController ()
+@interface ViewController () <ReflectionDelegate>
 
 @end
 
