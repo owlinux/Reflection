@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDD0F9DF1A25D25A002125E8 /* libReflection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD0F9DD1A25D25A002125E8 /* libReflection.a */; };
 		FDD619211A23389600389100 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD619201A23389600389100 /* main.m */; };
 		FDD619241A23389600389100 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD619231A23389600389100 /* AppDelegate.m */; };
 		FDD619271A23389600389100 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD619261A23389600389100 /* ViewController.m */; };
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FDD0F9DD1A25D25A002125E8 /* libReflection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libReflection.a; sourceTree = "<group>"; };
 		FDD0F9DE1A25D25A002125E8 /* Reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reflection.h; sourceTree = "<group>"; };
 		FDD6191B1A23389600389100 /* TestReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6191F1A23389600389100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDD0F9DF1A25D25A002125E8 /* libReflection.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +64,6 @@
 		FDD0F9DC1A25D25A002125E8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				FDD0F9DD1A25D25A002125E8 /* libReflection.a */,
 				FDD0F9DE1A25D25A002125E8 /* Reflection.h */,
 			);
 			path = Library;
