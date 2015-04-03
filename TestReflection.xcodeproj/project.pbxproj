@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E65ED0F91ACE1DEB00BFC450 /* HeadUnit_fabd31691d5ec94f.p12 in Resources */ = {isa = PBXBuildFile; fileRef = E65ED0F71ACE1DEB00BFC450 /* HeadUnit_fabd31691d5ec94f.p12 */; };
+		E65ED0FA1ACE1DEB00BFC450 /* App_I_5cd0c8a5236ec554_1.0.1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = E65ED0F81ACE1DEB00BFC450 /* App_I_5cd0c8a5236ec554_1.0.1.p12 */; };
 		FD7D29781A30447F00548386 /* libReflection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7D29771A30447F00548386 /* libReflection.a */; };
 		FDD619211A23389600389100 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD619201A23389600389100 /* main.m */; };
 		FDD619241A23389600389100 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD619231A23389600389100 /* AppDelegate.m */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E65ED0F71ACE1DEB00BFC450 /* HeadUnit_fabd31691d5ec94f.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HeadUnit_fabd31691d5ec94f.p12; sourceTree = "<group>"; };
+		E65ED0F81ACE1DEB00BFC450 /* App_I_5cd0c8a5236ec554_1.0.1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = App_I_5cd0c8a5236ec554_1.0.1.p12; sourceTree = "<group>"; };
 		FD7D29771A30447F00548386 /* libReflection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libReflection.a; sourceTree = "<group>"; };
 		FDD0F9DE1A25D25A002125E8 /* Reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reflection.h; sourceTree = "<group>"; };
 		FDD6191B1A23389600389100 /* TestReflection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestReflection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,8 @@
 		FDD619121A23389600389100 = {
 			isa = PBXGroup;
 			children = (
+				E65ED0F71ACE1DEB00BFC450 /* HeadUnit_fabd31691d5ec94f.p12 */,
+				E65ED0F81ACE1DEB00BFC450 /* App_I_5cd0c8a5236ec554_1.0.1.p12 */,
 				FDD6191D1A23389600389100 /* TestReflection */,
 				FDD619371A23389700389100 /* TestReflectionTests */,
 				FDD6191C1A23389600389100 /* Products */,
@@ -213,6 +219,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65ED0F91ACE1DEB00BFC450 /* HeadUnit_fabd31691d5ec94f.p12 in Resources */,
+				E65ED0FA1ACE1DEB00BFC450 /* App_I_5cd0c8a5236ec554_1.0.1.p12 in Resources */,
 				FDD6192A1A23389600389100 /* Main.storyboard in Resources */,
 				FDD6192F1A23389600389100 /* LaunchScreen.xib in Resources */,
 				FDD6192C1A23389600389100 /* Images.xcassets in Resources */,
