@@ -16,8 +16,9 @@
 #define kInitFlag           @"init_flag"
 #define kSignature          @"digital_signature"
 #define kCommonName         @"cm_name"
+#define kMacAddress         @"mac_address"
 
-#define kBaseUrl            @"https://221.133.61.202:443/"
+#define kBaseUrl            @"https://221.133.61.202/"
 #define kReqInitCert        @"initCert.do"
 #define kReqInitReg         @"initReg.do"
 #define kReqAuthCert        @"certCon.do"
@@ -47,6 +48,9 @@ typedef enum
 /// CP Key를 전달해주기 위한 Delegate
 - (void) setCpKey:(NSData *)cpKey resultCode:(int)code resultMsg:(NSString *)description;
 
+/// HeadUnit 요청에 대한 응답을 전달해주기 위한 Delegate
+- (void) responseHeadUnit:(NSData *)responseData keyData:(NSString *)cpKey resultCode:(int)code resultMsg:(NSString *)description;
+
 @end
 
 
@@ -56,8 +60,11 @@ typedef enum
 /// 라이브러리 사용을 위한 단말 등록
 - (BOOL) registerDevice:(id)delegate certData:(NSData *)data;
 
-/// 서버로부터 CP Key를 요청하기 위한 API
+/// Companion App이 서버로부터 CP Key를 요청하기 위한 API
 - (BOOL) requestCpKey;
+
+/// HeadUnit이 서버로부터 CP Key를 요청하기 위한 API
+- (BOOL) requestHeadUnit:(NSString *)deviceEnv mac:(NSString *)macAddress sig:(NSString *)signature;
 
 /// Security Level을 확인하기 위한 API
 - (SecurityLevel) getSecurityLevel;

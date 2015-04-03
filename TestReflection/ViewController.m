@@ -49,13 +49,16 @@
 {
     NSLog(@"setCpKey");
     
-    NSMutableString *stringBuffer = [NSMutableString stringWithCapacity:([cpKey length] * 2)];
+    NSString *cpKeyStr = [[NSString alloc] initWithData:cpKey encoding:NSUTF8StringEncoding];
 
-    const unsigned char *dataBytes = (const unsigned char *)cpKey.bytes;
-    for (NSUInteger i = 0; i < cpKey.length; ++i) {
-        [stringBuffer appendFormat:@"%02x", dataBytes[i]];
-    }
-
-    NSLog(@"%@", stringBuffer);
+    NSLog(@"CP Key : %@", cpKeyStr);
+    
+    [_reflection requestHeadUnit:@"H" mac:@"0019B8015F7D" sig:@"signatureData"];
 }
+
+- (void) responseHeadUnit:(NSData *)responseData keyData:(NSString *)cpKey resultCode:(int)code resultMsg:(NSString *)description
+{
+    NSLog(@"responseHeadUnit");
+}
+
 @end
